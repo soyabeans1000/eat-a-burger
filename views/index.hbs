@@ -1,0 +1,62 @@
+
+ <div class="card border-light bg-black">
+              <div class="card-body">
+                  <form class="form-inline">
+                      <input class="form_burger"  placeholder="Order Your Burger! Eg. Cheese Burger" type="text">&nbsp;&nbsp;<button class="btn btn-warning" type="submit">Order</button></form>
+              </div>
+            </div>
+         <br>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card bg-black">
+          <div class="card-header">
+            Ordered
+          </div>
+          <div class="card-body">
+           
+            <p class="card-text">{{#each orders}}
+
+{{#if eaten}}
+    Eaten:{{burger_name}} <button class="dltBtn" data-uid='{{burgerID}}'>Devor</button><br>
+  {{/if}}
+
+ 
+ 
+{{/each}}
+</p>
+           
+          </div>
+        </div>
+        </div>
+
+
+
+
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+             
+              {{!-- <p class="card-text"> {{#unless eaten}}
+ <h1>Not Eaten:{{burger_name}}</h1>
+  {{/unless}}</p>
+              --}}
+            </div>
+          </div>
+        </div>
+        <!--End of Row-->
+      </div>
+
+
+
+
+
+  
+
+
+
+
+
+

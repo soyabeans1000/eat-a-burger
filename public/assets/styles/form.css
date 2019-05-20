@@ -1,0 +1,41 @@
+body{
+	height: 100vh;
+     /* background-image: url('../images/bg.jpg');  */
+     /* background-image: url('../images/burger.jpg');  */
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-color:orange;
+    font-size:1em;
+    font-family: Verdana, Tahoma, sans-serif;
+    
+}
+
+
+.container 
+{
+    width:90%;
+}
+
+.burger-header
+{
+    /* background-image: url('../images/burger.jpg');  */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height:200px;
+    background-color:black;
+    font-size:3.5em;
+}
+
+.new_burger_form
+{
+    background-color:black;
+    padding:0px;
+}
+
+
+.form_burger
+{
+    width:70%;
+}
