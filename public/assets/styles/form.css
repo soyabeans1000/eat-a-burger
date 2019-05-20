@@ -1,20 +1,19 @@
 body{
-	height: 100vh;
-     /* background-image: url('../images/bg.jpg');  */
+	
+    
      /* background-image: url('../images/burger.jpg');  */
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-    background-color:orange;
+    background-color: brown;
     font-size:1em;
-    font-family: Verdana, Tahoma, sans-serif;
-    
+    font-family: Verdana, Tahoma, sans-serif; 
 }
-
 
 .container 
 {
     width:90%;
+    height: 100vh;
 }
 
 .burger-header
@@ -23,9 +22,10 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
-    height:200px;
-    background-color:black;
+    height:250px;
+    background-color:white;
     font-size:3.5em;
+    opacity: 0.8;
 }
 
 .new_burger_form

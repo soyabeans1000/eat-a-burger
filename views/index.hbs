@@ -9,40 +9,26 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="card bg-black">
-          <div class="card-header">
-            Ordered
+          <div class="card-header bg-warning">
+           Current Orders
           </div>
-          <div class="card-body">
-           
+          <div class="card-body">         
             <p class="card-text">{{#each orders}}
 
 {{#if eaten}}
     Eaten:{{burger_name}} <button class="dltBtn" data-uid='{{burgerID}}'>Devor</button><br>
   {{/if}}
-
- 
- 
 {{/each}}
-</p>
-           
+</p>     
           </div>
         </div>
         </div>
-
-
-
-
         <div class="col-lg-6">
           <div class="card">
-            <div class="card-header">
-              Featured
+            <div class="card-header bg-warning">
+             Orders Delivered
             </div>
-            <div class="card-body">
-             
-              {{!-- <p class="card-text"> {{#unless eaten}}
- <h1>Not Eaten:{{burger_name}}</h1>
-  {{/unless}}</p>
-              --}}
+            <div class="card-body">            
             </div>
           </div>
         </div>
