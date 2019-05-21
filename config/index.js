@@ -1,10 +1,26 @@
-const { createConnection } = require('mysql2')
+var mysql = require('mysql')
+
+var connection;
+
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL)
+}
+
+else 
+{
+
+  connection = mysql.createConnection({
+    host: 'localhost',
+    port: 3306,
+    user: 'root',
+    password: 'Reboot@2019',
+    database: 'burger_db'
+      })
+
+}
 
 
-module.exports = createConnection({
-  host: 'localhost',
-  port: 3306,
-  user: 'root',
-  password: 'Reboot@2019',
-  database: 'burger_db'
-})
+//connection.connect()
+
+module.exports = connection
+
