@@ -9,4 +9,7 @@ app.engine('.hbs', require('express-handlebars')({ defaultLayout: 'main', extnam
 app.set('view engine', '.hbs')
 
 require('./routes')(app)
+
+
+console.log('server')
 require('./config').connect(_ => { app.listen(3000) })

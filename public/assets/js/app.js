@@ -2,13 +2,11 @@ const { fetch, alert } = window
 
 document.addEventListener('click', e => {
     e.preventDefault()
-    //if trash button clicked
+    
     if (e.target.className === 'fas fa-concierge-bell') {
 
         let burgerID = e.target.getAttribute('data-id')
-    
-
-    let newValues = {}
+        let newValues = {}
 
     newValues.eaten = 'true'
    
