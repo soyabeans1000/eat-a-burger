@@ -1,4 +1,3 @@
-
  <div class="card border-light bg-black">
               <div class="card-body">
                   <form class="form-inline">
@@ -16,7 +15,7 @@
             <p class="card-text">{{#each orders}}
 
 {{#if eaten}}
-    Eaten:{{burger_name}} <button class="dltBtn" data-uid='{{burgerID}}'>Devor</button><br>
+    Eaten:{{burger_name}} <a href="#"><i class="fas fa-concierge-bell" burger_id="cbbb" ></i></a><br>
   {{/if}}
 {{/each}}
 </p>     
@@ -34,6 +33,60 @@
         </div>
         <!--End of Row-->
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ {{!-- <div class="card border-light bg-black">
+              <div class="card-body">
+                  <form class="form-inline">
+                      <input class="form_burger"  placeholder="Order Your Burger! Eg. Cheese Burger" type="text">&nbsp;&nbsp;<button class="btn btn-warning" type="submit">Order</button></form>
+              </div>
+            </div>
+         <br>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card bg-black">
+          <div class="card-header bg-warning">
+           Current Orders
+          </div>
+          <div class="card-body">         
+            <p class="card-text">{{#each orders}}
+
+{{#if eaten}}
+    Eaten:{{burger_name}} 
+
+<a href="#"><i class="fas fa-concierge-bell" burger_id="cbbb" ></i></a></div><br>
+
+  {{/if}}
+{{/each}}
+</p>     
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-header bg-warning">
+             Orders Delivered
+            </div>
+            <div class="card-body">            
+            </div>
+          </div>
+        </div>
+        <!--End of Row-->
+      </div> --}}
 
 
 
