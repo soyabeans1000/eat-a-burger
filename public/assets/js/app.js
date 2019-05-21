@@ -6,9 +6,7 @@ document.addEventListener('click', e => {
     if (e.target.className === 'fas fa-concierge-bell') {
 
         let burgerID = e.target.getAttribute('data-id')
-    console.log(e.target.getAttribute('data-id'))
-    console.log('Clicked')
-
+    
 
     let newValues = {}
 

@@ -23,19 +23,10 @@ module.exports = app => {
   })
 
   // Update
-  app.put('/burgers/:id', (req, res) => {
-    console.log(req.body)
-    console.log(req.params.id)
-    console.log('Inside Put')
-    console.log(`UPDATE burger_orders SET eaten = true WHERE burgerID = ${req.params.id}`)
+  app.put('/burgers/:id', (req, res) => {   
     db.query(`UPDATE burger_orders SET eaten = true WHERE burgerID = ${req.params.id}`, e => {
       if (e) throw e
       res.send('ok')
     })
   })
 }
-
-
-
-
-
