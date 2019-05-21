@@ -17,5 +17,13 @@
     "sql": "^0.78.0"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soyabeans1000/eat-a-burger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/soyabeans1000/eat-a-burger/issues"
+  },
+  "homepage": "https://github.com/soyabeans1000/eat-a-burger#readme"
 }
