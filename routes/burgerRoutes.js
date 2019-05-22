@@ -1,5 +1,7 @@
 const db = require('../config')
 
+console.log(db)
+
 module.exports = app => {
   //Get all Burgers
   app.get('/burgers', (req, res) => {
