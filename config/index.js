@@ -2,7 +2,7 @@ var mysql = require('mysql')
 
 var connection;
 
-if (process.env.JAWSDB_URL) {
+// if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection({
     host: 'sulnwdk5uwjw1r2k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     port: 3306,
@@ -12,18 +12,18 @@ if (process.env.JAWSDB_URL) {
   })
 
   console.log("connection")
-}
+// }
 
-else 
-{
+// else 
+// {
 
-  connection = mysql.createConnection({
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: 'Reboot@2019',
-    database: 'burger_db'
-      })
+//   connection = mysql.createConnection({
+//     host: 'localhost',
+//     port: 3306,
+//     user: 'root',
+//     password: 'Reboot@2019',
+//     database: 'burger_db'
+//       })
 
 }
 
