@@ -6,26 +6,16 @@ module.exports = app => {
 
     db.query('SELECT * FROM burger_orders', (e, orders) => {
       if (e) throw e
-      //res.json(orders)
       res.render('index', { orders })
     })
   })
 
-  //Get all Burgers
+  //Catch all routes toerh
   app.get('*', (req, res) => {
 
     db.query('SELECT * FROM burger_orders', (e, orders) => {
       if (e) throw e
-      //res.json(orders)
       res.render('index', { orders })
-    })
-  })
-
-
-  app.post('/users', (req, res) => {
-    db.query('INSERT INTO users SET ?', req.body, e => {
-      if (e) throw e
-      res.send('ok')
     })
   })
 
