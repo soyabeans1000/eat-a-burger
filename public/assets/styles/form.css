@@ -35,7 +35,44 @@ body{
 }
 
 
+.img_placeholder
+{
+    height:auto;
+    width:225px;
+}
+
 .form_burger
 {
     width:70%;
+}
+
+
+/* Width at 640px and below  */
+@media only screen and (max-width: 640px) {
+
+    #orders{
+        padding:5px;
+    }
+
+    #current_orders, #completed_orders
+    {
+        padding:10px;
+    }
+
+
+    .burger-header
+{
+        font-size:1em;
+        height:150px;
+
+    
+}
+
+
+.img_placeholder
+{
+    height:auto;
+    width:125px;
+}
+
 }
