@@ -1,16 +1,10 @@
 {
-  "name": "handlebarsfun",
+  "name": "eat-a-burger",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "config.json": "0.0.4",
+    "config.json": "^0.0.4",
     "express": "^4.16.4",
     "express-handlebars": "^3.1.0",
     "mysql": "^2.17.1",
@@ -19,11 +13,17 @@
     "sql": "^0.78.0"
   },
   "devDependencies": {},
-  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/soyabeans1000/eat-a-burger.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/soyabeans1000/eat-a-burger/issues"
   },

@@ -11,6 +11,5 @@ app.set('view engine', '.hbs')
 require('./routes')(app)
 
 
-console.log('inside server')
 require('./config').connect(_ => { app.listen(3000)
 console.log('connection suces') })
