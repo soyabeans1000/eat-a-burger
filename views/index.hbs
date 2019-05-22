@@ -1,7 +1,7 @@
  <div class="card border-light bg-black">
               <div class="card-body">
                   <form class="form-inline">
-                      <input class="form_burger"  placeholder="Order Your Burger! Eg. Cheese Burger" type="text">&nbsp;&nbsp;<button class="btn btn-warning" type="submit">Order</button></form>
+                      <input class="form_burger" id="burger_name"  placeholder="Order Your Burger! Eg. Cheese Burger" type="text">&nbsp;&nbsp;<button class="btn btn-warning" id="addBurger" type="submit">Order</button></form>
               </div>
             </div>
          <br>
@@ -17,7 +17,7 @@
 
 
               {{#unless eaten}}
- Not Eaten:{{burger_name}} <a href="#"><i class="fas fa-concierge-bell" data-id="{{burgerID}}"></i></a><br>
+ {{burger_name}} <a href="#"><i class="fas fa-concierge-bell" data-id="{{burgerID}}"></i></a><br>
   {{/unless}}
 
 {{/each}}
@@ -34,7 +34,7 @@
             <p class="card-text">{{#each orders}}
 
 {{#if eaten}}
-    Eaten:{{burger_name}}<br>
+   {{burger_name}}<br>
   {{/if}}
 {{/each}}
 </p>     

@@ -7,9 +7,7 @@ document.addEventListener('click', e => {
 
         let burgerID = e.target.getAttribute('data-id')
         let newValues = {}
-
-    newValues.eaten = 'true'
-   
+    newValues.eaten = 'true'  
       fetch(`/burgers/${burgerID}`, {
         method: 'PUT',
         headers: {
@@ -21,9 +19,40 @@ document.addEventListener('click', e => {
          location.reload()
         })
         .catch(e => console.error(e))
-
    }
     
+})
+
+
+document.querySelector('#addBurger').addEventListener('click', e => {
+  e.preventDefault()
+
+  if (document.querySelector('#burger_name').value != "")
+  {
+    fetch('/burgers', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        burger_name: document.querySelector('#burger_name').value,
+        eaten: false
+        })
+    })
+      .then(_ => {
+        location.reload()
+      })
+      .catch(e => console.error(e))
+  }
+
+  else 
+
+  {
+    alert('Please enter Burger Name')
+  }
+
+
+  
 })
     
 
