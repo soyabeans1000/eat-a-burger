@@ -50,9 +50,7 @@ body{
 /* Width at 640px and below  */
 @media only screen and (max-width: 640px) {
 
-    #orders{
-        padding:5px;
-    }
+    
 
     #current_orders, #completed_orders
     {
@@ -74,5 +72,21 @@ body{
     height:auto;
     width:125px;
 }
+
+}
+
+
+@media only screen and (min-device-width : 640px) and (max-device-width : 1024px)
+{
+
+    #orders{
+        margin-top: 5px;
+    }    
+
+    #current_orders, #completed_orders
+    {
+        padding:10px;
+    }
+
 
 }
