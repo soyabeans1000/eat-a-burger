@@ -6,6 +6,8 @@ module.exports = app => {
   //Get all Burgers
   app.get('/burgers', (req, res) => {
 
+    console.log('Inside routers')
+
     db.query('SELECT * FROM burger_orders', (e, orders) => {
       if (e) throw e
       //res.json(orders)
@@ -15,6 +17,8 @@ module.exports = app => {
 
   //Get all Burgers
   app.get('*', (req, res) => {
+
+    console.log('Inside routers')
 
     db.query('SELECT * FROM burger_orders', (e, orders) => {
       if (e) throw e
