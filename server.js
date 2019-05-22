@@ -12,7 +12,7 @@ require('./routes')(app)
 
 
 require('./config').connect(_ => { 
-    app.listen(3000)})
+    app.listen(process.env.PORT || 5000)})
 
 
  
