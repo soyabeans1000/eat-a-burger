@@ -15,6 +15,6 @@ require('./routes')(app)
 //     app.listen(3000)})
 
 
-    require('./config').sync()
+    require('./config')
   .then(_ => app.listen(3000))
   .catch(e => console.log(e))
