@@ -10,6 +10,8 @@ if (process.env.JAWSDB_URL) {
     password: 'g705fr1c1woss4bd',
     database: 'a8n15k71l54nqsi3'
   })
+
+  console.log("connection")
 }
 
 else 
