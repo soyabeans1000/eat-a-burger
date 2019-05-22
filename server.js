@@ -11,10 +11,8 @@ app.set('view engine', '.hbs')
 require('./routes')(app)
 
 
-// require('./config').connect(_ => { 
-//     app.listen(3000)})
+require('./config').connect(_ => { 
+    app.listen(3000)})
 
 
-    require('./config')
-  .then(_ => app.listen(3000))
-  .catch(e => console.log(e))
+ 
